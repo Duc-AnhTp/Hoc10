@@ -1,12 +1,29 @@
-/* HOC10 Register Section */
+/* === HOC10 REGISTER SECTION === */
 .hoc10-register {
     position: relative;
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    background: #ff7a00;
     color: #fff;
     padding: 100px 0;
     overflow: hidden;
+
+    /* Viền trắng trên và dưới, không bo góc */
+    border-top: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    border-radius: 0;
 }
 
+/* Nền sóng nhẹ */
+.hoc10-register::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/img/bg-pattern.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+}
+
+/* Container căn ngang */
 .register-container {
     position: relative;
     z-index: 2;
@@ -16,26 +33,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px;
 }
 
 .register-content {
     flex: 1;
-    max-width: 360px;
+    max-width: 450px;
 }
 
 .register-content h3 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 24px;
     color: #fff;
-    text-balance: balance;
 }
 
 .register-content .btn-primary {
     background: #fff;
-    color: #f97316;
+    color: #ff7a00;
     padding: 12px 28px;
     border-radius: 8px;
     font-weight: 600;
@@ -48,33 +64,70 @@
     transform: translateY(-2px);
 }
 
-.image-center,
-.image-right {
+/* --- Phần ảnh --- */
+.register-images {
+    position: relative;
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.image-wrapper {
+.image-small {
+    position: absolute;
+    top: -60px;
+    left: 75%;
+    transform: translateX(-50%);
     background: #fff;
-    padding: 10px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.image-wrapper img {
-    width: 260px;
-    height: auto;
+.image-large {
+    background: #fff;
+    padding: 8px;
     border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+/* Kích thước ảnh */
+.image-small img {
+    width: 240px;
+    border-radius: 8px;
     display: block;
 }
 
-.image-center {
-    margin-top: -40px;
+.image-large img {
+    width: 420px;
+    border-radius: 8px;
+    display: block;
 }
 
-.image-right {
-    margin-top: 40px;
+/* Responsive */
+@media (max-width: 992px) {
+    .register-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .register-images {
+        justify-content: center;
+    }
+
+    .image-small {
+        position: static;
+        transform: none;
+        margin-bottom: 20px;
+    }
+
+    .image-large {
+        margin-top: 0;
+    }
+
+    .image-small img,
+    .image-large img {
+        width: 250px;
+    }
 }

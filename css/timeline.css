@@ -31,9 +31,8 @@
     z-index: 1;
 }
 
-.timeline-item.active {
-    /* Active timeline styling */
-}
+/* .timeline-item.active {
+} */
 
 .timeline-dot {
     width: 50px;
