@@ -1,0 +1,43 @@
+/* Access Section */
+.access-section {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.access-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    padding: 60px;
+    border-radius: 12px;
+    color: white;
+    position: relative;
+}
+
+.access-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.4;
+}
+
+.access-content span {
+    color: #facc15;
+}
+
+.access-image {
+    position: relative;
+}
+
+.access-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.access-box .video__play {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}

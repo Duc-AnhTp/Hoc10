@@ -1,0 +1,77 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: #fff8f4;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    display: flex;
+    gap: 16px;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+}
+
+.btn-primary:focus-visible {
+    outline: 3px solid #facc15;
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-secondary:hover {
+    background: #fff4ed;
+    transform: translateY(-2px);
+}
+
+.btn-secondary:focus-visible {
+    outline: 3px solid #facc15;
+    outline-offset: 2px;
+    border-radius: 6px;
+}
