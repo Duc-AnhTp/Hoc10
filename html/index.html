@@ -16,16 +16,18 @@
             <div class="logo">
                 <a href="/"><img src="/img/logo_hoc10.png" alt="Logo Hoc10"></a>
             </div>
-            <button class="navbar-toggler" id="mobileMenuBtn">
+            <button class="navbar-toggler" id="mobileMenuBtn" aria-controls="navbarMenu" aria-expanded="false"
+                aria-label="Mở menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <nav class="navbar-menu" id="navbarMenu">
+            <nav class="navbar-menu" id="navbarMenu" role="navigation">
                 <ul class="navbar-nav">
                     <li><a href="#" title="Mua sách">Mua sách</a></li>
                     <li class="dropdown">
-                        <a href="#" title="Giới thiệu">Giới thiệu</a>
+                        <a href="#" title="Giới thiệu" tabindex="0" aria-haspopup="true" aria-expanded="false">Giới
+                            thiệu</a>
                         <ul class="submenu">
                             <li><a href="#">Bộ sách Cánh Diều</a></li>
                             <li><a href="#">Về chúng tôi</a></li>
@@ -36,7 +38,7 @@
                     <li><a href="#" title="Bài giảng">Bài giảng</a></li>
                     <li><a href="#" title="Đề kiểm tra">Đề kiểm tra</a></li>
                     <li class="dropdown">
-                        <a href="#" title="Hỗ trợ">Hỗ trợ</a>
+                        <a href="#" title="Hỗ trợ" tabindex="0" aria-haspopup="true" aria-expanded="false">Hỗ trợ</a>
                         <ul class="submenu">
                             <li><a href="#">Câu hỏi thường gặp</a></li>
                             <li><a href="#">Địa chỉ mua sách</a></li>
@@ -46,8 +48,8 @@
                 </ul>
             </nav>
             <div class="navbar-actions">
-                <a href="#" class="btn-register">Đăng ký</a>
-                <a href="#" class="btn-login">Đăng nhập</a>
+                <a href="#" class="btn-register" role="button">Đăng ký</a>
+                <a href="#" class="btn-login" role="button">Đăng nhập</a>
             </div>
         </div>
     </header>
@@ -67,23 +69,31 @@
             <div class="container">
                 <div class="feature-grid">
                     <div class="feature-content">
-                        <h2>Học sinh - Trải nghiệm học mới mẻ và thú vị</h2>
+                        <h2 class="title"><span class="line8">
+                                Học sinh
+                            </span> - Trải nghiệm học mơi mẻ và thú vị</h2>
                         <ul class="feature-list">
                             <li>
-                                <div class="feature-icon">📚</div>
+                                <div class="feature-icon">
+                                    <img class="student-icon" src="https://www.hoc10.vn/assets/img/icon-robot.svg"
+                                        alt="Robot">
+                                </div>
                                 <div class="feature-text"><span class="orange">40,000+</span> bài tập tương tác chia
                                     theo từng bài học</div>
                             </li>
                             <li>
-                                <div class="feature-icon">✓</div>
+                                <div class="feature-icon"><img class="student-icon"
+                                        src="https://www.hoc10.vn/assets/img/icon-route.svg" alt="Bản đồ"></div>
                                 <div class="feature-text">Làm bài miễn phí, trả kết quả tức thì</div>
                             </li>
                             <li>
-                                <div class="feature-icon">📊</div>
+                                <div class="feature-icon"><img class="student-icon"
+                                        src="https://www.hoc10.vn/assets/img/icon-chart.svg" alt="Biểu đồ"></div>
                                 <div class="feature-text">Giao diện bắt mắt, đa dạng bài tập tương tác</div>
                             </li>
                             <li>
-                                <div class="feature-icon">🎯</div>
+                                <div class="feature-icon"><img class="student-icon"
+                                        src="https://www.hoc10.vn/assets/img/icon-check.svg" alt="Tick"></div>
                                 <div class="feature-text">Lưu lịch sử làm bài, dễ dàng theo dõi tiến bộ</div>
                             </li>
                         </ul>
@@ -91,6 +101,10 @@
                     </div>
                     <div class="feature-image">
                         <img src="/img/student.png" alt="Học sinh">
+                    </div>
+                    <div class="video__play cursor" bis_skin_checked="1">
+                        <img src="https://www.hoc10.vn/static/media/play_youtube.b055e7dc.png" alt="Chạy video"
+                            class="w-50">
                     </div>
                 </div>
             </div>
@@ -107,6 +121,10 @@
                     <div class="access-image">
                         <img src="/img/tusach.png" alt="Tủ sách">
                     </div>
+                    <div class="video__play cursor" bis_skin_checked="1">
+                        <img src="https://www.hoc10.vn/static/media/play_youtube.b055e7dc.png" alt="Chạy video"
+                            class="w-50">
+                    </div>
                 </div>
             </div>
         </section>
@@ -117,19 +135,31 @@
                 <h2 class="section-title">Hoc10 <span>Phát triển phẩm chất và năng lực học sinh</span></h2>
                 <div class="program-grid">
                     <div class="program-item">
-                        <div class="program-icon">📖</div>
-                        <h4>Nội dung thể hiện đúng và đầy đủ Chương trình GDPT 2018</h4>
-                        <p>Xây dựng bởi đội ngũ tác giả giàu kinh nghiệm về giáo dục phổ thông</p>
+                        <div class="program-icon">
+                            <div class="feature-icon"><img class="program-icon"
+                                    src="https://www.hoc10.vn/assets/img/book1.svg" alt="Sách 1"></div>
+
+                        </div>
+                        <h4>Nội dung thể hiện đúng và đầy đủ Chương trình giáo dục phổ thông 2018</h4>
+                        <p>Xây dựng bởi đội ngũ tác giả giàu kinh nghiệm về giáo dục phổ thông, trong đó có nhiều chuyên
+                            gia tham gia xây dựng Chương trình Giáo dục phổ thông 2018 của Bộ Giáo dục và Đào tạo.</p>
                     </div>
                     <div class="program-item">
-                        <div class="program-icon">💻</div>
+                        <div class="program-icon">
+                            <div class="feature-icon"><img class="program-icon"
+                                    src="https://www.hoc10.vn/assets/img/book2.svg" alt="Sách 2"></div>
+                        </div>
                         <h4>SGK điện tử tương tác</h4>
                         <p>Tương tác trực tiếp tạo thuận lợi cho người sử dụng</p>
                     </div>
                     <div class="program-item">
-                        <div class="program-icon">📝</div>
+                        <div class="program-icon">
+                            <div class="feature-icon"><img class="program-icon"
+                                    src="https://www.hoc10.vn/assets/img/book3.svg" alt="Sách 3"></div>
+                        </div>
                         <h4>Kho bài tập tiện ích</h4>
-                        <p>Các bài tập tương tác phong phú, sinh động đi kèm lý thuyết</p>
+                        <p>Các bài tập tương tác phong phú, sinh động đi kèm lý thuyết và lời giải chi tiết, hỗ trợ hiệu
+                            quả cho giáo viên, học sinh và các bậc phụ huynh.</p>
                     </div>
                 </div>
             </div>
@@ -144,35 +174,52 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2020 - 2021</div>
-                            <div class="timeline-class">Lớp 1</div>
+                            <div class="timeline-class">
+                                <span>Lớp 1</span>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item active">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2021 - 2022</div>
-                            <div class="timeline-class">Lớp 2, 6</div>
+                            <div class="timeline-class">
+                                <span>Lớp 2</span>
+                                <span>Lớp 6</span>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item active">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2022 - 2023</div>
-                            <div class="timeline-class">Lớp 3, 7, 10</div>
+                            <div class="timeline-class">
+                                <span>Lớp 3</span>
+                                <span>Lớp 7</span>
+                                <span>Lớp 10</span>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item active">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2023 - 2024</div>
-                            <div class="timeline-class">Lớp 4, 8, 11</div>
+                            <div class="timeline-class">
+                                <span>Lớp 4</span>
+                                <span>Lớp 8</span>
+                                <span>Lớp 11</span>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item active">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2024 - 2025</div>
-                            <div class="timeline-class">Lớp 5, 9, 12</div>
+                            <div class="timeline-class">
+                                <span>Lớp 5</span>
+                                <span>Lớp 9</span>
+                                <span>Lớp 12</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -180,41 +227,57 @@
                 <!-- STATISTICS BAR -->
                 <div class="statistics">
                     <div class="stat-item">
-                        <div class="stat-icon">👨‍🏫</div>
+                        <div class="stat-icon">
+                            <img class="statistics-bar-icon" src="https://www.hoc10.vn/assets/img/icon-edu.svg"
+                                alt="Giáo viên">
+                        </div>
                         <div class="stat-content">
                             <div class="stat-number">390,000+</div>
                             <div class="stat-text">Giáo viên</div>
                         </div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-icon">🏫</div>
+                        <div class="stat-icon">
+                            <img class="statistics-bar-icon" src="https://www.hoc10.vn/assets/img/icon-school.svg"
+                                alt="Trường học">
+                        </div>
                         <div class="stat-content">
                             <div class="stat-number">35,000+</div>
                             <div class="stat-text">Trường học</div>
                         </div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-icon">📚</div>
+                        <div class="stat-icon">
+                            <img class="statistics-bar-icon" src="https://www.hoc10.vn/assets/img/icon-book1.svg"
+                                alt="Đầu sách">
+                        </div>
                         <div class="stat-content">
                             <div class="stat-number">500+</div>
                             <div class="stat-text">Đầu sách</div>
                         </div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-icon">✏️</div>
+                        <div class="stat-icon">
+                            <img class="statistics-bar-icon" src="https://www.hoc10.vn/assets/img/icon-book2.svg"
+                                alt="Bài tập tương tác">
+                        </div>
                         <div class="stat-content">
                             <div class="stat-number">20,000+</div>
                             <div class="stat-text">Bài tập tương tác</div>
                         </div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-icon">🎥</div>
+                        <div class="stat-icon">
+                            <img class="statistics-bar-icon"
+                                src="https://www.hoc10.vn/static/media/icon-video-2.ad0a33e4.svg" alt="Video minh học">
+                        </div>
                         <div class="stat-content">
                             <div class="stat-number">1,400+</div>
                             <div class="stat-text">Video minh họa</div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -229,35 +292,60 @@
                         <h2>Giáo viên - Công cụ hữu ích và thuận tiện mới</h2>
                         <ul class="feature-list">
                             <li>
-                                <div class="feature-icon">💻</div>
+                                <div class="feature-icon">
+                                    <img src="https://www.hoc10.vn/assets/img/icon-laptop.svg" alt="Giáo viên">
+                                </div>
                                 <div class="feature-text">Giảng dạy trực tuyến dễ dàng</div>
                             </li>
                             <li>
-                                <div class="feature-icon">📋</div>
+                                <div class="feature-icon">
+                                    <img src="https://www.hoc10.vn/assets/img/icon-manager.svg" alt="Giáo viên">
+                                </div>
                                 <div class="feature-text">Quản lí lớp học thuận tiện</div>
                             </li>
                             <li>
-                                <div class="feature-icon">📝</div>
+                                <div class="feature-icon">
+                                    <img src="https://www.hoc10.vn/assets/img/icon-media.svg" alt="Giáo viên">
+                                </div>
                                 <div class="feature-text">Soạn bài giảng trực tuyến nhanh chóng</div>
                             </li>
                             <li>
-                                <div class="feature-icon">✓</div>
+                                <div class="feature-icon">
+                                    <img src="https://www.hoc10.vn/assets/img/icon-check.svg" alt="Giáo viên">
+                                </div>
                                 <div class="feature-text">Kiểm tra, đánh giá năng lực chính xác</div>
                             </li>
                         </ul>
-                        <a href="#" class="btn-primary disabled">Đang phát triển</a>
+                        <a href="#" class="btn-primary disabled" role="button" aria-disabled="true" tabindex="-1">Đang
+                            phát triển</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- TESTIMONIALS SECTION -->
-        <section class="testimonials-section">
-            <div class="container">
-                <h3>Trải nghiệm đầy đủ tính năng Hoc10</h3>
-                <a href="#" class="btn-register">Đăng ký ngay</a>
+        <section class="hoc10-register">
+            <div class="register-container">
+                <div class="register-content">
+                    <h3>Trải nghiệm đầy đủ <br> tính năng Hoc10</h3>
+                    <a href="/dang-ky/" class="btn-primary">Đăng ký ngay</a>
+                </div>
+                <div class="image-center">
+                    <div class="image-wrapper">
+                        <img src="/img/img-tn1.jpg" alt="Trải nghiệm đầy đủ tính năng Hoc10 - Học sinh 1">
+                    </div>
+                </div>
+                <div class="image-right">
+                    <div class="image-wrapper">
+                        <img src="/img/img-tn2.jpg" alt="Trải nghiệm đầy đủ tính năng Hoc10 - Học sinh 2">
+                    </div>
+                </div>
             </div>
         </section>
+
+
+
+
     </main>
 
     <!-- FOOTER -->
@@ -339,9 +427,11 @@
                         <div class="footer-social">
                             <p>Kết nối với <span>Hoc10</span></p>
                             <div class="social-links">
-                                <a href="https://www.facebook.com/Hoc10" target="_blank" class="social-icon">f</a>
+                                <a href="https://www.facebook.com/Hoc10" target="_blank" class="social-icon"><img
+                                        src="https://www.hoc10.vn/assets/img/icon-facebook.svg" alt="Logo Hoc10"></a>
                                 <a href="https://www.youtube.com/channel/UCtmc2xq9J4n2_kuOAue7dCQ" target="_blank"
-                                    class="social-icon">▶</a>
+                                    class="social-icon"><img src="https://www.hoc10.vn/assets/img/icon-youtube.svg"
+                                        alt="Logo Hoc10"></a>
                             </div>
                         </div>
                     </div>
