@@ -64,7 +64,6 @@
     transform: translateY(-2px);
 }
 
-/* --- Phần ảnh --- */
 .register-images {
     position: relative;
     flex: 1;
@@ -92,7 +91,6 @@
     margin-top: 100px;
 }
 
-/* Kích thước ảnh */
 .image-small img {
     width: 240px;
     border-radius: 8px;
