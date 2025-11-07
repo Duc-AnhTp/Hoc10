@@ -1,4 +1,5 @@
 /* Statistics and Testimonials Section */
+
 .statistics {
     display: flex;
     justify-content: space-around;
@@ -7,7 +8,8 @@
     gap: 30px;
     background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
     padding: 40px;
-    border-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     margin-top: 40px;
 }
 

@@ -17,11 +17,10 @@
     font-weight: 700;
     margin-bottom: 32px;
     line-height: 1.4;
-    \
- text-balance;
+
+    text-balance;
 }
 
-\
 .feature-content h2 .line8 {
     color: var(--primary-color);
     text-decoration: underline;

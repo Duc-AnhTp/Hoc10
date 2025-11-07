@@ -1,4 +1,8 @@
 /* Footer */
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .footer {
     background: var(--footer-bg);
     color: #1d2b35;
@@ -81,8 +85,8 @@
 
 .footer-col h3 {
     color: white;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 900;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -106,7 +110,7 @@
 
 .footer-col a {
     color: #a0aec0;
-    font-size: 13px;
+    font-size: 17px;
     transition: all 0.3s ease;
 }
 
@@ -216,11 +220,12 @@
     background: #1d2b35;
     padding: 20px;
     border-top: 1px solid #3d5468;
+    font-size: 20px;
 }
 
 .copyright {
     text-align: center;
-    font-size: 13px;
+    font-size: 17px;
     color: #64748b;
 }
 
