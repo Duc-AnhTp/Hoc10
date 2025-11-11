@@ -1,15 +1,13 @@
-// Import Bootstrap và SCSS của bạn
 import "bootstrap";
 import "./styles/main.scss";
 
-document.querySelector("#app").innerHTML = `
-  <div class="container text-center">
-    <h1 class="display-4 text-primary">Hello, Bootstrap + Vite!</h1>
-    <p class="lead">Trang này đang chạy với Vite</p>
-    <button class="btn btn-success mt-3" id="clickMe">Click me</button>
-  </div>
-`;
+// Import các component
+import { initButtons } from "./components/button/button.js";
+import { closeModal, openModal } from "./components/modal/modal.js";
+import { setupNavbar } from "./components/navbar/navbar.js";
 
-document.querySelector("#clickMe").addEventListener("click", () => {
-  alert("It works!");
-});
+setupNavbar();
+
+document.getElementById("openBtn")?.addEventListener("click", () => openModal("myModal"));
+document.getElementById("closeBtn")?.addEventListener("click", () => closeModal("myModal"));
+initButtons();
