@@ -1,12 +1,10 @@
-import "bootstrap";
-import "./styles/main.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import "./styles/main.css"
 
-// Import các component
-import { initBookCards } from "./components/BookCard.js";
-import { renderBookCategory } from "./components/BookList.js";
-import { getBooksByGrade, mockBooks } from "./utils/mockData.js";
+import { initBookCards } from "./components/BookCard.js"
+import { renderBookCategory } from "./components/BookList.js"
+import { getBooksByGrade, mockBooks } from "./utils/mockData.js"
 
 const gradeTabs = document.querySelectorAll(".grade-tab")
 const filterCheckboxes = document.querySelectorAll(".filter-items input[type='checkbox']")

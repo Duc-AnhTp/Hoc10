@@ -1,0 +1,17 @@
+/* MAIN CSS ENTRY POINT
+   IMPORT ORDER MATTERS (ITCSS Methodology) */
+
+/* 1. BASE LAYER - Variables & Resets */
+@import "./base/_variables.css";
+@import "./base/_reset.css";
+
+/* 2. COMPONENT LAYER - Component-Specific Styles */
+@import "./components/_navbar.css";
+@import "./components/_book-card.css";
+@import "./components/_buttons.css";
+@import "./components/_sidebar.css";
+@import "./components/_powerpoint-card.css";
+@import "./components/_content.css";
+
+/* 3. UTILITY LAYER - Animations & Utilities */
+@import "./utils/_animations.css";
