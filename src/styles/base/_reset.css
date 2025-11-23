@@ -1,0 +1,29 @@
+/* BOOTSTRAP IMPORTS & GLOBAL RESET */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* GLOBAL BOX SIZING & RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--font-primary);
+    color: var(--neutral-dark);
+    background-color: var(--neutral-white);
+}
+
+/* UTILITY CLASSES */
+.text-center {
+    text-align: center;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

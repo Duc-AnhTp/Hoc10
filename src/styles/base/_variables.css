@@ -1,0 +1,74 @@
+/* ==========================================
+   DESIGN TOKENS - Color Palette & Typography
+   Hoc10.vn Theme System
+   ========================================== */
+
+:root {
+    /* ==========================================
+     PRIMARY COLORS - Brand Identity
+     ========================================== */
+    --primary-orange: #ff9900;
+    --primary-orange-dark: #ff7700;
+    --primary-hoc10-green: #27ae60;
+    /* Main HOC10 green */
+
+    /* ==========================================
+     SECONDARY COLORS - Accents & States
+     ========================================== */
+    --secondary-teal: #20c997;
+    --secondary-red: #ff6b6b;
+    --secondary-yellow: #ffd93d;
+
+    /* ==========================================
+     NEUTRAL COLORS - Grays & Whites
+     ========================================== */
+    --neutral-white: #ffffff;
+    --neutral-light: #f5f5f5;
+    --neutral-gray: #999999;
+    --neutral-dark-gray: #666666;
+    --neutral-dark: #333333;
+
+    /* ==========================================
+     ACCENT COLORS - Decorative Elements
+     ========================================== */
+    --accent-light-blue: #a8d8ea;
+    --accent-light-teal: #7fdbca;
+
+    /* ==========================================
+     TYPOGRAPHY - Font Stack
+     ========================================== */
+    --font-primary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 20px;
+
+    /* ==========================================
+     SPACING SCALE - Design System Units
+     ========================================== */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+
+    /* ==========================================
+     BORDER RADIUS - Consistency
+     ========================================== */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+
+    /* ==========================================
+     SHADOWS - Depth Layers
+     ========================================== */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+    /* ==========================================
+     TRANSITIONS - Animation Timing
+     ========================================== */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}

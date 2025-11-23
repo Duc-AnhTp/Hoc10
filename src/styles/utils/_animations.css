@@ -1,0 +1,25 @@
+/* ANIMATIONS & TRANSITIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.book-card {
+    animation: fadeIn var(--transition-slow) ease-out;
+}
+
+/* Print Styles */
+@media print {
+
+    .grade-filter-section,
+    .filter-sidebar {
+        display: none;
+    }
+}
