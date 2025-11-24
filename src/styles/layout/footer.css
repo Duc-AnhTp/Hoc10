@@ -1,0 +1,21 @@
+.footer-section {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  margin-top: var(--spacing-2xl);
+}
+
+.footer-section h6 {
+  color: var(--primary-light);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.text-light-link {
+  color: var(--white) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.text-light-link:hover {
+  color: var(--primary-light) !important;
+}

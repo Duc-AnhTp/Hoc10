@@ -1,0 +1,64 @@
+/* Media queries cho tablet */
+@media (max-width: 991.98px) {
+  .sidebar-section {
+    margin-bottom: 2rem;
+  }
+
+  .filter-card {
+    position: relative;
+    top: 0;
+  }
+
+  .class-tabs .nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media queries cho mobile */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+
+  .section-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .class-tabs .nav-link {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .book-image {
+    height: 150px;
+    font-size: 2rem;
+  }
+
+  .book-card {
+    border-radius: var(--radius-md);
+  }
+}
+
+/* Media queries cho small mobile */
+@media (max-width: 576px) {
+  .main-content {
+    padding: 1rem 0;
+  }
+
+  .section-header h4 {
+    font-size: 1rem;
+  }
+
+  .book-title {
+    font-size: 0.9rem;
+  }
+
+  .filter-card {
+    padding: 1rem;
+  }
+}

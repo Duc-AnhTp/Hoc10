@@ -1,0 +1,5 @@
+.header-section {
+  background-color: var(--white);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 0;
+}

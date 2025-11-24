@@ -1,0 +1,27 @@
+/* Utility classes for common use */
+
+.text-muted {
+  color: var(--gray);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.small {
+  font-size: 0.9rem;
+}

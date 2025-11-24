@@ -1,17 +1,23 @@
-/* MAIN CSS ENTRY POINT
-   IMPORT ORDER MATTERS (ITCSS Methodology) */
+/* Import tất cả CSS files theo thứ tự logical */
 
-/* 1. BASE LAYER - Variables & Resets */
-@import "./base/_variables.css";
-@import "./base/_reset.css";
+/* Base Styles */
+@import url("./base/variables.css");
+@import url("./base/reset.css");
+@import url("./base/typography.css");
 
-/* 2. COMPONENT LAYER - Component-Specific Styles */
-@import "./components/_navbar.css";
-@import "./components/_book-card.css";
-@import "./components/_buttons.css";
-@import "./components/_sidebar.css";
-@import "./components/_powerpoint-card.css";
-@import "./components/_content.css";
+/* Components */
+@import url("./components/navbar.css");
+@import url("./components/breadcrumb.css");
+@import url("./components/filter-card.css");
+@import url("./components/tabs.css");
+@import url("./components/book-cards.css");
 
-/* 3. UTILITY LAYER - Animations & Utilities */
-@import "./utils/_animations.css";
+/* Layout */
+@import url("./layout/header.css");
+@import url("./layout/main-content.css");
+@import url("./layout/sidebar.css");
+@import url("./layout/footer.css");
+
+/* Utilities & Responsive */
+@import url("./utils/helpers.css");
+@import url("./utils/responsive.css");
